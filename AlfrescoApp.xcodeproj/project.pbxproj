@@ -204,6 +204,17 @@
 		2B3446851B6A5F7600853B7D /* ParentCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B3446841B6A5F7600853B7D /* ParentCollectionViewController.xib */; };
 		2B34468B1B6A62EC00853B7D /* LoadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B34468A1B6A62EC00853B7D /* LoadingCollectionViewCell.xib */; };
 		2B34468D1B6A638400853B7D /* SearchCollectionSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B34468C1B6A638400853B7D /* SearchCollectionSectionHeader.xib */; };
+		2B40053B1C1EB78D00B57CF2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4005391C1EB78D00B57CF2 /* Interface.storyboard */; };
+		2B40053D1C1EB78D00B57CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B40053C1C1EB78D00B57CF2 /* Assets.xcassets */; };
+		2B4005441C1EB78D00B57CF2 /* AppleWatchTest Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2B4005431C1EB78D00B57CF2 /* AppleWatchTest Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B40054B1C1EB78D00B57CF2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40054A1C1EB78D00B57CF2 /* InterfaceController.swift */; };
+		2B40054D1C1EB78D00B57CF2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40054C1C1EB78D00B57CF2 /* ExtensionDelegate.swift */; };
+		2B40054F1C1EB78D00B57CF2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40054E1C1EB78D00B57CF2 /* NotificationController.swift */; };
+		2B4005511C1EB78D00B57CF2 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4005501C1EB78D00B57CF2 /* GlanceController.swift */; };
+		2B4005531C1EB78D00B57CF2 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4005521C1EB78D00B57CF2 /* ComplicationController.swift */; };
+		2B4005551C1EB78D00B57CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4005541C1EB78D00B57CF2 /* Assets.xcassets */; };
+		2B4005591C1EB78D00B57CF2 /* AppleWatchTest.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2B4005371C1EB78D00B57CF2 /* AppleWatchTest.app */; };
+		2B4005691C1EBB9400B57CF2 /* TaskDetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4005681C1EBB9400B57CF2 /* TaskDetailsInterfaceController.swift */; };
 		2B55920B1B90AB1C00D85C7B /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5592091B90AB1C00D85C7B /* SearchResultsTableViewController.m */; };
 		2B55920C1B90AB1C00D85C7B /* SearchResultsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B55920A1B90AB1C00D85C7B /* SearchResultsTableViewController.xib */; };
 		2B7169F71B567CC1009A4487 /* large_folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B7169F51B567CC1009A4487 /* large_folder.png */; };
@@ -663,6 +674,20 @@
 			remoteGlobalIDString = 7373B4F417A66E9400869949;
 			remoteInfo = AlfrescoApp;
 		};
+		2B4005451C1EB78D00B57CF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7373B4ED17A66E9400869949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B4005421C1EB78D00B57CF2;
+			remoteInfo = "AppleWatchTest Extension";
+		};
+		2B4005571C1EB78D00B57CF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7373B4ED17A66E9400869949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B4005361C1EB78D00B57CF2;
+			remoteInfo = AppleWatchTest;
+		};
 		588D9F581A0A34E2000E00B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 73036F281886E3CC002AF6DC /* AlfrescoSDK.xcodeproj */;
@@ -799,6 +824,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2B4005651C1EB78E00B57CF2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2B4005441C1EB78D00B57CF2 /* AppleWatchTest Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4005671C1EB78E00B57CF2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2B4005591C1EB78D00B57CF2 /* AppleWatchTest.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		734CC4141A70080A005D148E /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1098,6 +1145,20 @@
 		2B3446841B6A5F7600853B7D /* ParentCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParentCollectionViewController.xib; sourceTree = "<group>"; };
 		2B34468A1B6A62EC00853B7D /* LoadingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCollectionViewCell.xib; sourceTree = "<group>"; };
 		2B34468C1B6A638400853B7D /* SearchCollectionSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchCollectionSectionHeader.xib; sourceTree = "<group>"; };
+		2B4005371C1EB78D00B57CF2 /* AppleWatchTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleWatchTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B40053A1C1EB78D00B57CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2B40053C1C1EB78D00B57CF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B40053E1C1EB78D00B57CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B4005431C1EB78D00B57CF2 /* AppleWatchTest Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AppleWatchTest Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B4005491C1EB78D00B57CF2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2B40054A1C1EB78D00B57CF2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2B40054C1C1EB78D00B57CF2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2B40054E1C1EB78D00B57CF2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2B4005501C1EB78D00B57CF2 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		2B4005521C1EB78D00B57CF2 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		2B4005541C1EB78D00B57CF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B4005561C1EB78D00B57CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B4005681C1EBB9400B57CF2 /* TaskDetailsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailsInterfaceController.swift; sourceTree = "<group>"; };
 		2B5592081B90AB1C00D85C7B /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SearchResultsTableViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		2B5592091B90AB1C00D85C7B /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SearchResultsTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		2B55920A1B90AB1C00D85C7B /* SearchResultsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultsTableViewController.xib; sourceTree = "<group>"; };
@@ -1758,6 +1819,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B4005401C1EB78D00B57CF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		734CC3E91A700808005D148E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2212,6 +2280,40 @@
 			path = "Site Members View Controller";
 			sourceTree = "<group>";
 		};
+		2B4005381C1EB78D00B57CF2 /* AppleWatchTest */ = {
+			isa = PBXGroup;
+			children = (
+				2B4005391C1EB78D00B57CF2 /* Interface.storyboard */,
+				2B40053C1C1EB78D00B57CF2 /* Assets.xcassets */,
+				2B40053E1C1EB78D00B57CF2 /* Info.plist */,
+			);
+			path = AppleWatchTest;
+			sourceTree = "<group>";
+		};
+		2B4005471C1EB78D00B57CF2 /* AppleWatchTest Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2B40054A1C1EB78D00B57CF2 /* InterfaceController.swift */,
+				2B40054C1C1EB78D00B57CF2 /* ExtensionDelegate.swift */,
+				2B40054E1C1EB78D00B57CF2 /* NotificationController.swift */,
+				2B4005501C1EB78D00B57CF2 /* GlanceController.swift */,
+				2B4005521C1EB78D00B57CF2 /* ComplicationController.swift */,
+				2B4005541C1EB78D00B57CF2 /* Assets.xcassets */,
+				2B4005561C1EB78D00B57CF2 /* Info.plist */,
+				2B4005481C1EB78D00B57CF2 /* Supporting Files */,
+				2B4005681C1EBB9400B57CF2 /* TaskDetailsInterfaceController.swift */,
+			);
+			path = "AppleWatchTest Extension";
+			sourceTree = "<group>";
+		};
+		2B4005481C1EB78D00B57CF2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B4005491C1EB78D00B57CF2 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		2B93CBC41ABACC34003BAD2E /* Connection Diagnostic View Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -2586,6 +2688,8 @@
 				08E89C9E17E7593B006936DF /* AlfrescoApp Tests */,
 				734CC3ED1A700808005D148E /* AlfrescoDocumentPicker */,
 				734CC3FB1A700809005D148E /* AlfrescoDocumentPickerFileProvider */,
+				2B4005381C1EB78D00B57CF2 /* AppleWatchTest */,
+				2B4005471C1EB78D00B57CF2 /* AppleWatchTest Extension */,
 				7373B4F717A66E9400869949 /* Frameworks */,
 				7373B4F617A66E9400869949 /* Products */,
 				CE0AF57B8038B86BE84A37DE /* Pods */,
@@ -2599,6 +2703,8 @@
 				08E89C9917E7593B006936DF /* AlfrescoApp Tests.xctest */,
 				734CC3EC1A700808005D148E /* AlfrescoDocumentPicker.appex */,
 				734CC3FA1A700808005D148E /* AlfrescoDocumentPickerFileProvider.appex */,
+				2B4005371C1EB78D00B57CF2 /* AppleWatchTest.app */,
+				2B4005431C1EB78D00B57CF2 /* AppleWatchTest Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3920,6 +4026,40 @@
 			productReference = 08E89C9917E7593B006936DF /* AlfrescoApp Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2B4005361C1EB78D00B57CF2 /* AppleWatchTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B4005661C1EB78E00B57CF2 /* Build configuration list for PBXNativeTarget "AppleWatchTest" */;
+			buildPhases = (
+				2B4005351C1EB78D00B57CF2 /* Resources */,
+				2B4005651C1EB78E00B57CF2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B4005461C1EB78D00B57CF2 /* PBXTargetDependency */,
+			);
+			name = AppleWatchTest;
+			productName = AppleWatchTest;
+			productReference = 2B4005371C1EB78D00B57CF2 /* AppleWatchTest.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2B4005421C1EB78D00B57CF2 /* AppleWatchTest Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B4005641C1EB78E00B57CF2 /* Build configuration list for PBXNativeTarget "AppleWatchTest Extension" */;
+			buildPhases = (
+				2B40053F1C1EB78D00B57CF2 /* Sources */,
+				2B4005401C1EB78D00B57CF2 /* Frameworks */,
+				2B4005411C1EB78D00B57CF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppleWatchTest Extension";
+			productName = "AppleWatchTest Extension";
+			productReference = 2B4005431C1EB78D00B57CF2 /* AppleWatchTest Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		734CC3EB1A700808005D148E /* AlfrescoDocumentPicker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 734CC4131A70080A005D148E /* Build configuration list for PBXNativeTarget "AlfrescoDocumentPicker" */;
@@ -3975,6 +4115,7 @@
 				05B92CA8B70C4731A2DDEA50 /* Copy Pods Resources */,
 				734CC4141A70080A005D148E /* Embed App Extensions */,
 				128EEEFF91E8D83D94B8D338 /* Embed Pods Frameworks */,
+				2B4005671C1EB78E00B57CF2 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -3984,6 +4125,7 @@
 				734CC3AF1A6FBC75005D148E /* PBXTargetDependency */,
 				734CC4061A700809005D148E /* PBXTargetDependency */,
 				73F14C101A8389620042D91E /* PBXTargetDependency */,
+				2B4005581C1EB78D00B57CF2 /* PBXTargetDependency */,
 			);
 			name = AlfrescoApp;
 			productName = AlfrescoApp;
@@ -3997,11 +4139,19 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ALF;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Alfresco;
 				TargetAttributes = {
 					08E89C9817E7593B006936DF = {
 						TestTargetID = 7373B4F417A66E9400869949;
+					};
+					2B4005361C1EB78D00B57CF2 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = W8N95J537P;
+					};
+					2B4005421C1EB78D00B57CF2 = {
+						CreatedOnToolsVersion = 7.2;
 					};
 					734CC3EB1A700808005D148E = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -4049,6 +4199,7 @@
 				es,
 				ja,
 				"zh-Hans",
+				Base,
 			);
 			mainGroup = 7373B4EC17A66E9400869949;
 			productRefGroup = 7373B4F617A66E9400869949 /* Products */;
@@ -4069,6 +4220,8 @@
 				08E89C9817E7593B006936DF /* AlfrescoApp Tests */,
 				734CC3EB1A700808005D148E /* AlfrescoDocumentPicker */,
 				734CC3F91A700808005D148E /* AlfrescoDocumentPickerFileProvider */,
+				2B4005361C1EB78D00B57CF2 /* AppleWatchTest */,
+				2B4005421C1EB78D00B57CF2 /* AppleWatchTest Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -4135,6 +4288,23 @@
 				7390B3831B03684400E7191F /* invalid-config-test.json in Resources */,
 				08E89CA317E7593B006936DF /* InfoPlist.strings in Resources */,
 				7390B3821B03684400E7191F /* empty-config-test.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4005351C1EB78D00B57CF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B40053D1C1EB78D00B57CF2 /* Assets.xcassets in Resources */,
+				2B40053B1C1EB78D00B57CF2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4005411C1EB78D00B57CF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4005551C1EB78D00B57CF2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4637,6 +4807,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B40053F1C1EB78D00B57CF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B40054F1C1EB78D00B57CF2 /* NotificationController.swift in Sources */,
+				2B40054D1C1EB78D00B57CF2 /* ExtensionDelegate.swift in Sources */,
+				2B4005531C1EB78D00B57CF2 /* ComplicationController.swift in Sources */,
+				2B4005691C1EBB9400B57CF2 /* TaskDetailsInterfaceController.swift in Sources */,
+				2B40054B1C1EB78D00B57CF2 /* InterfaceController.swift in Sources */,
+				2B4005511C1EB78D00B57CF2 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		734CC3E81A700808005D148E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4936,6 +5119,16 @@
 			target = 7373B4F417A66E9400869949 /* AlfrescoApp */;
 			targetProxy = 08E89CA717E7593C006936DF /* PBXContainerItemProxy */;
 		};
+		2B4005461C1EB78D00B57CF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B4005421C1EB78D00B57CF2 /* AppleWatchTest Extension */;
+			targetProxy = 2B4005451C1EB78D00B57CF2 /* PBXContainerItemProxy */;
+		};
+		2B4005581C1EB78D00B57CF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B4005361C1EB78D00B57CF2 /* AppleWatchTest */;
+			targetProxy = 2B4005571C1EB78D00B57CF2 /* PBXContainerItemProxy */;
+		};
 		734CC3AF1A6FBC75005D148E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AlfrescoKit;
@@ -5033,6 +5226,14 @@
 				27E0FE4D1B0A00A600CD6C5D /* zh-Hans */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2B4005391C1EB78D00B57CF2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B40053A1C1EB78D00B57CF2 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 		73B95B1817A6AE010099FB84 /* InfoPlist.strings */ = {
@@ -5205,6 +5406,187 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = AdHoc;
+		};
+		2B40055A1C1EB78E00B57CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IBSC_MODULE = AppleWatchTest_Extension;
+				INFOPLIST_FILE = AppleWatchTest/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfresco.mobile.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		2B40055B1C1EB78E00B57CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IBSC_MODULE = AppleWatchTest_Extension;
+				INFOPLIST_FILE = AppleWatchTest/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfresco.mobile.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		2B40055C1C1EB78E00B57CF2 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IBSC_MODULE = AppleWatchTest_Extension;
+				INFOPLIST_FILE = AppleWatchTest/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfresco.mobile.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = AdHoc;
+		};
+		2B40055D1C1EB78E00B57CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "AppleWatchTest Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfresco.mobile.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		2B40055E1C1EB78E00B57CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "AppleWatchTest Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfresco.mobile.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		2B40055F1C1EB78E00B57CF2 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "AppleWatchTest Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfresco.mobile.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = AdHoc;
 		};
@@ -5531,6 +5913,24 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2B4005641C1EB78E00B57CF2 /* Build configuration list for PBXNativeTarget "AppleWatchTest Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B40055D1C1EB78E00B57CF2 /* Debug */,
+				2B40055E1C1EB78E00B57CF2 /* Release */,
+				2B40055F1C1EB78E00B57CF2 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2B4005661C1EB78E00B57CF2 /* Build configuration list for PBXNativeTarget "AppleWatchTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B40055A1C1EB78E00B57CF2 /* Debug */,
+				2B40055B1C1EB78E00B57CF2 /* Release */,
+				2B40055C1C1EB78E00B57CF2 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		734CC4121A70080A005D148E /* Build configuration list for PBXNativeTarget "AlfrescoDocumentPickerFileProvider" */ = {
 			isa = XCConfigurationList;
