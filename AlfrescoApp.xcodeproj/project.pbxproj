@@ -222,6 +222,9 @@
 		2B9031FA1C0EF78B005C10ED /* SearchService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9031F91C0EF78B005C10ED /* SearchService.m */; };
 		2B93CBCC1ABACCE0003BAD2E /* ConnectionDiagnosticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B93CBCA1ABACCE0003BAD2E /* ConnectionDiagnosticViewController.m */; };
 		2B93CBCF1ABACE2E003BAD2E /* ConnectionDiagnosticStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B93CBCE1ABACE2E003BAD2E /* ConnectionDiagnosticStoryboard.storyboard */; };
+		2B98B8351C20109B00361AE1 /* AlfrescoTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B98B8341C20109B00361AE1 /* AlfrescoTask.swift */; };
+		2B98B8371C2010BC00361AE1 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B98B8361C2010BC00361AE1 /* Enums.swift */; };
+		2B98B8391C2010EA00361AE1 /* TaskTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B98B8381C2010EA00361AE1 /* TaskTableRow.swift */; };
 		2BA24A691B8C5D470075CA99 /* SearchViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA24A681B8C5D470075CA99 /* SearchViewControllerDataSource.m */; };
 		2BA7FA011B419B11002CCB33 /* ALFSwipeToDeleteGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA7FA001B419B11002CCB33 /* ALFSwipeToDeleteGestureRecognizer.m */; };
 		2BB1BA121BDFDDB0005AEE12 /* NewAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1BA101BDFDDB0005AEE12 /* NewAccountViewController.m */; };
@@ -1169,6 +1172,9 @@
 		2B93CBC91ABACCE0003BAD2E /* ConnectionDiagnosticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionDiagnosticViewController.h; sourceTree = "<group>"; };
 		2B93CBCA1ABACCE0003BAD2E /* ConnectionDiagnosticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ConnectionDiagnosticViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		2B93CBCE1ABACE2E003BAD2E /* ConnectionDiagnosticStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConnectionDiagnosticStoryboard.storyboard; sourceTree = "<group>"; };
+		2B98B8341C20109B00361AE1 /* AlfrescoTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlfrescoTask.swift; sourceTree = "<group>"; };
+		2B98B8361C2010BC00361AE1 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		2B98B8381C2010EA00361AE1 /* TaskTableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableRow.swift; sourceTree = "<group>"; };
 		2BA24A671B8C5D470075CA99 /* SearchViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewControllerDataSource.h; sourceTree = "<group>"; };
 		2BA24A681B8C5D470075CA99 /* SearchViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewControllerDataSource.m; sourceTree = "<group>"; };
 		2BA7F9FF1B419B11002CCB33 /* ALFSwipeToDeleteGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALFSwipeToDeleteGestureRecognizer.h; sourceTree = "<group>"; };
@@ -2293,6 +2299,7 @@
 		2B4005471C1EB78D00B57CF2 /* AppleWatchTest Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2B98B8331C20107400361AE1 /* Model */,
 				2B40054A1C1EB78D00B57CF2 /* InterfaceController.swift */,
 				2B40054C1C1EB78D00B57CF2 /* ExtensionDelegate.swift */,
 				2B40054E1C1EB78D00B57CF2 /* NotificationController.swift */,
@@ -2302,6 +2309,7 @@
 				2B4005561C1EB78D00B57CF2 /* Info.plist */,
 				2B4005481C1EB78D00B57CF2 /* Supporting Files */,
 				2B4005681C1EBB9400B57CF2 /* TaskDetailsInterfaceController.swift */,
+				2B98B8381C2010EA00361AE1 /* TaskTableRow.swift */,
 			);
 			path = "AppleWatchTest Extension";
 			sourceTree = "<group>";
@@ -2322,6 +2330,15 @@
 				2B93CBCE1ABACE2E003BAD2E /* ConnectionDiagnosticStoryboard.storyboard */,
 			);
 			path = "Connection Diagnostic View Controller";
+			sourceTree = "<group>";
+		};
+		2B98B8331C20107400361AE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B98B8341C20109B00361AE1 /* AlfrescoTask.swift */,
+				2B98B8361C2010BC00361AE1 /* Enums.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		2BC7CA791B219037009BB2A9 /* Collection View Cells */ = {
@@ -4814,8 +4831,11 @@
 				2B40054F1C1EB78D00B57CF2 /* NotificationController.swift in Sources */,
 				2B40054D1C1EB78D00B57CF2 /* ExtensionDelegate.swift in Sources */,
 				2B4005531C1EB78D00B57CF2 /* ComplicationController.swift in Sources */,
+				2B98B8351C20109B00361AE1 /* AlfrescoTask.swift in Sources */,
 				2B4005691C1EBB9400B57CF2 /* TaskDetailsInterfaceController.swift in Sources */,
 				2B40054B1C1EB78D00B57CF2 /* InterfaceController.swift in Sources */,
+				2B98B8371C2010BC00361AE1 /* Enums.swift in Sources */,
+				2B98B8391C2010EA00361AE1 /* TaskTableRow.swift in Sources */,
 				2B4005511C1EB78D00B57CF2 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5922,6 +5942,7 @@
 				2B40055F1C1EB78E00B57CF2 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B4005661C1EB78E00B57CF2 /* Build configuration list for PBXNativeTarget "AppleWatchTest" */ = {
 			isa = XCConfigurationList;
@@ -5931,6 +5952,7 @@
 				2B40055C1C1EB78E00B57CF2 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		734CC4121A70080A005D148E /* Build configuration list for PBXNativeTarget "AlfrescoDocumentPickerFileProvider" */ = {
 			isa = XCConfigurationList;

@@ -69,6 +69,14 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="dueAtDate" destination="4kj-ZO-bdc" id="8gG-fD-dac"/>
+                        <outlet property="dueAtLabel" destination="Mmy-2B-zkD" id="RF6-R5-uQH"/>
+                        <outlet property="startedAtDate" destination="0xa-Tp-hbc" id="IS7-Cn-pFz"/>
+                        <outlet property="startedAtLabel" destination="3bR-m5-1Z5" id="kwf-fk-S9g"/>
+                        <outlet property="taskImage" destination="s0I-q0-xat" id="0vM-uJ-v63"/>
+                        <outlet property="taskName" destination="oXu-70-0bh" id="MZu-tw-EF6"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="491" y="343"/>
