@@ -46,33 +46,29 @@
                             <items>
                                 <group width="1" alignment="left" id="aZf-jN-Bpx">
                                     <items>
-                                        <imageView width="30" alignment="left" id="s0I-q0-xat"/>
-                                        <label width="100" alignment="left" verticalAlignment="center" text="Name" id="oXu-70-0bh"/>
+                                        <imageView width="30" alignment="left" contentMode="scaleAspectFit" id="s0I-q0-xat"/>
+                                        <label width="100" alignment="left" verticalAlignment="center" text="Name" numberOfLines="0" id="oXu-70-0bh"/>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" layout="vertical" id="xq2-wE-Vwe">
                                     <items>
                                         <label width="1" alignment="left" text="Started at" id="3bR-m5-1Z5"/>
-                                        <dateLabel width="1" alignment="left" id="0xa-Tp-hbc">
-                                            <dateFormatterStyle key="dateStyle" short="YES"/>
-                                        </dateLabel>
+                                        <label alignment="left" text="date" id="LNR-WA-516"/>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" layout="vertical" id="HDI-kY-cUQ">
                                     <items>
                                         <label width="1" alignment="left" text="Due at" id="Mmy-2B-zkD"/>
-                                        <dateLabel width="1" alignment="left" id="4kj-ZO-bdc">
-                                            <dateFormatterStyle key="dateStyle" short="YES"/>
-                                        </dateLabel>
+                                        <label alignment="left" text="date" id="Er6-IF-7K7"/>
                                     </items>
                                 </group>
                             </items>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="dueAtDate" destination="4kj-ZO-bdc" id="8gG-fD-dac"/>
+                        <outlet property="dueAtDate" destination="Er6-IF-7K7" id="jom-Y1-MP2"/>
                         <outlet property="dueAtLabel" destination="Mmy-2B-zkD" id="RF6-R5-uQH"/>
-                        <outlet property="startedAtDate" destination="0xa-Tp-hbc" id="IS7-Cn-pFz"/>
+                        <outlet property="startedAtDate" destination="LNR-WA-516" id="32i-j7-zTi"/>
                         <outlet property="startedAtLabel" destination="3bR-m5-1Z5" id="kwf-fk-S9g"/>
                         <outlet property="taskImage" destination="s0I-q0-xat" id="0vM-uJ-v63"/>
                         <outlet property="taskName" destination="oXu-70-0bh" id="MZu-tw-EF6"/>

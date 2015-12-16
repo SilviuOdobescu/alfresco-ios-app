@@ -39,6 +39,8 @@
 
 #import <HockeySDK/HockeySDK.h>
 
+#import "WatchHandler.h"
+
 static NSString * const kMDMMissingRequiredKeysKey = @"MDMMissingKeysKey";
 
 @interface AppDelegate()
@@ -346,7 +348,10 @@ static NSString * const kMDMMissingRequiredKeysKey = @"MDMMissingKeysKey";
 - (void)sessionReceived:(NSNotification *)notification
 {
     self.session = notification.object;
-    
+    if([AccountManager sharedManager].selectedAccount.accountType == UserAccountTypeOnPremise)
+    {
+        [WatchHandler sharedManager].session = self.session;
+    }
 }
 
 - (void)configureManagedObjectWithDictionary:(NSDictionary *)managedDictionary completionBlock:(void (^)(BOOL successful, BOOL addedAccount, UserAccount *configuredAccount, NSError *configurationError))completionBlock

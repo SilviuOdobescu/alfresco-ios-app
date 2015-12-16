@@ -15,9 +15,9 @@ class TaskDetailsInterfaceController: WKInterfaceController
     @IBOutlet var taskImage: WKInterfaceImage!
     @IBOutlet var taskName: WKInterfaceLabel!
     @IBOutlet var startedAtLabel: WKInterfaceLabel!
-    @IBOutlet var startedAtDate: WKInterfaceDate!
     @IBOutlet var dueAtLabel: WKInterfaceLabel!
-    @IBOutlet var dueAtDate: WKInterfaceDate!
+    @IBOutlet var startedAtDate: WKInterfaceLabel!
+    @IBOutlet var dueAtDate: WKInterfaceLabel!
 
     var taskDataSource : AlfrescoTask!
     
@@ -49,9 +49,12 @@ class TaskDetailsInterfaceController: WKInterfaceController
         }
         
         taskImage.setImage(image);
-        
         taskName.setText(taskDataSource.taskName);
         
+        let dateFormatter = NSDateFormatter();
+        dateFormatter.dateFormat = "dd MMMM yyyy";
+        startedAtDate.setText(dateFormatter.stringFromDate(taskDataSource.taskStartedAtDate));
+        dueAtDate.setText(dateFormatter.stringFromDate(taskDataSource.taskDueAtDate));
     }
 
     override func willActivate()

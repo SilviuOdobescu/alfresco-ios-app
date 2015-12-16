@@ -17,12 +17,21 @@ class AlfrescoTask : NSObject
     var taskStartedAtDate : NSDate
     var taskDueAtDate : NSDate
     
-    init(taskIdentifier taskIdentifierParam : String, taskName taskNameParam : String, taskType taskTypeParam : TaskType, taskPriority taskPriorityParam : TaskPriority, taskStartedAtDate taskStartedAtDateParam : NSDate, taskDueAtDate taskDueAtDateParam : NSDate)
+    init(taskIdentifier taskIdentifierParam : String, taskName taskNameParam : String, taskType taskTypeParam : String, taskPriority taskPriorityParam : Int, taskStartedAtDate taskStartedAtDateParam : NSDate, taskDueAtDate taskDueAtDateParam : NSDate)
     {
         taskIdentifier = taskIdentifierParam;
         taskName = taskNameParam;
-        taskType = taskTypeParam;
-        taskPriority = taskPriorityParam;
+        
+        if taskTypeParam == "wf:adhocTask"
+        {
+            taskType = .TaskTypeToDo;
+        }
+        else
+        {
+            taskType = .TaskTypeReview;
+        }
+        
+        taskPriority = TaskPriority(rawValue:taskPriorityParam)!;
         taskStartedAtDate = taskStartedAtDateParam;
         taskDueAtDate = taskDueAtDateParam;
     }

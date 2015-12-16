@@ -187,6 +187,7 @@
 		27E84E8D18AD53510024B658 /* mainmenu-sync@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27E84E7318AD53510024B658 /* mainmenu-sync@2x.png */; };
 		27E84E8E18AD53510024B658 /* mainmenu-tasks.png in Resources */ = {isa = PBXBuildFile; fileRef = 27E84E7418AD53510024B658 /* mainmenu-tasks.png */; };
 		27E84E8F18AD53510024B658 /* mainmenu-tasks@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27E84E7518AD53510024B658 /* mainmenu-tasks@2x.png */; };
+		2B06AD7C1C216B9500313390 /* WatchHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B06AD7B1C216B9500313390 /* WatchHandler.m */; };
 		2B09B0461B86121200448A52 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B09B0441B86121200448A52 /* SearchViewController.m */; };
 		2B09B0471B86121200448A52 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B09B0451B86121200448A52 /* SearchViewController.xib */; };
 		2B114E601B1F39D4005A05AA /* cell-button-checked-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B114E5C1B1F39D4005A05AA /* cell-button-checked-filled.png */; };
@@ -1130,6 +1131,8 @@
 		27E84E7318AD53510024B658 /* mainmenu-sync@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainmenu-sync@2x.png"; sourceTree = "<group>"; };
 		27E84E7418AD53510024B658 /* mainmenu-tasks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainmenu-tasks.png"; sourceTree = "<group>"; };
 		27E84E7518AD53510024B658 /* mainmenu-tasks@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainmenu-tasks@2x.png"; sourceTree = "<group>"; };
+		2B06AD7A1C216B9500313390 /* WatchHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchHandler.h; sourceTree = "<group>"; };
+		2B06AD7B1C216B9500313390 /* WatchHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchHandler.m; sourceTree = "<group>"; };
 		2B09B0431B86121200448A52 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		2B09B0441B86121200448A52 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		2B09B0451B86121200448A52 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
@@ -2248,6 +2251,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		2B06AD751C216AEF00313390 /* WatchHandling */ = {
+			isa = PBXGroup;
+			children = (
+				2B06AD7A1C216B9500313390 /* WatchHandler.h */,
+				2B06AD7B1C216B9500313390 /* WatchHandler.m */,
+			);
+			name = WatchHandling;
+			sourceTree = "<group>";
+		};
 		2B09B03E1B85F96500448A52 /* Search View Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -2741,6 +2753,7 @@
 		7373B4FE17A66E9400869949 /* AlfrescoApp */ = {
 			isa = PBXGroup;
 			children = (
+				2B06AD751C216AEF00313390 /* WatchHandling */,
 				73B957C717A673A90099FB84 /* App Delegate */,
 				73B957CA17A673A90099FB84 /* Constants */,
 				7379731F18AA8E9B007613B2 /* Data Models */,
@@ -4998,6 +5011,7 @@
 				731A8F51192F5B1F0099BE7B /* NewVersionTextViewCell.m in Sources */,
 				731A8F4C192F5A0B0099BE7B /* NewVersionToggleCell.m in Sources */,
 				73F628B7185779440050F437 /* TextFileViewController.m in Sources */,
+				2B06AD7C1C216B9500313390 /* WatchHandler.m in Sources */,
 				2BFB080C1B14B45F00ED8DFF /* BaseCollectionViewFlowLayout.m in Sources */,
 				2BFB08071B14A1F400ED8DFF /* FileFolderCollectionViewController.m in Sources */,
 				73B9585A17A6750F0099FB84 /* SystemNotice.m in Sources */,

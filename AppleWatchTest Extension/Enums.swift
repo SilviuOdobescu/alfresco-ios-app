@@ -16,7 +16,7 @@ enum TaskType : Int
 
 enum TaskPriority : Int
 {
-    case TaskPriorityLow = 0
-    case TaskPriorityMedium = 1
-    case TaskPriorityHigh = 2
+    case TaskPriorityLow = 3
+    case TaskPriorityMedium = 2
+    case TaskPriorityHigh = 1
 }
