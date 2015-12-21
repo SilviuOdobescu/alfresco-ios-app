@@ -33,8 +33,11 @@ class TaskDetailsInterfaceController: WKInterfaceController
         {
         case .TaskTypeToDo:
             image = UIImage(named: "cell-button-checked-filled")!;
+            addMenuItemWithItemIcon(.Accept, title: "Done", action: "doneButtonPressed");
         case .TaskTypeReview:
             image = UIImage(named: "task_priority_high")!;
+            addMenuItemWithItemIcon(.Accept, title: "Approve", action: "approveButtonPressed");
+            addMenuItemWithItemIcon(.Decline, title: "Reject", action: "rejectButtonPressed");
         }
         image = image.imageWithRenderingMode(.AlwaysTemplate);
         
@@ -69,4 +72,18 @@ class TaskDetailsInterfaceController: WKInterfaceController
         super.didDeactivate()
     }
 
+    func rejectButtonPressed()
+    {
+        CommunicationManager.sharedInstance.sendInteractiveMessage("Reject", taskIdentifier: taskDataSource.taskIdentifier);
+    }
+    
+    func approveButtonPressed()
+    {
+        CommunicationManager.sharedInstance.sendInteractiveMessage("Approve", taskIdentifier: taskDataSource.taskIdentifier);
+    }
+    
+    func doneButtonPressed()
+    {
+        CommunicationManager.sharedInstance.sendInteractiveMessage("Done", taskIdentifier: taskDataSource.taskIdentifier);
+    }
 }

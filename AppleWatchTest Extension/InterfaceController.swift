@@ -8,9 +8,9 @@
 
 import WatchKit
 import Foundation
-import WatchConnectivity
 
-class InterfaceController: WKInterfaceController, WCSessionDelegate
+
+class InterfaceController: WKInterfaceController, TaskListDisplayDelegate
 {
     @IBOutlet var tableView: WKInterfaceTable!
     var tableViewDataSource: [AlfrescoTask]!
@@ -20,10 +20,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate
         super.awakeWithContext(context);
         
         // Configure interface objects here.
-        
-        let session = WCSession.defaultSession()
-        session.delegate = self;
-        session.activateSession()
+        CommunicationManager.sharedInstance.taskListDelegate = self;
     }
 
     override func willActivate()
@@ -43,41 +40,16 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate
         return tableViewDataSource[rowIndex];
     }
     
-    func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject])
+    func loadTasks(tasks: [AlfrescoTask])
     {
-        tableViewDataSource = parseApplicationContext(applicationContext);
-        
+        tableViewDataSource = tasks;
         tableView.setNumberOfRows(tableViewDataSource.count, withRowType: "TaskTableRow");
-        for index in 0..<tableView.numberOfRows
+        for index in 0..<tableViewDataSource.count
         {
             if let controller = tableView.rowControllerAtIndex(index) as? TaskTableRow
             {
                 controller.setup(tableViewDataSource[index]);
             }
         }
-
-    }
-    
-    func parseApplicationContext(context: [String : AnyObject]) -> [AlfrescoTask]!
-    {
-        var results = [AlfrescoTask]()
-        
-        if let array = context["results"] as! [Dictionary<String, AnyObject>]?
-        {
-            for dict in array
-            {
-                let taskIdentifier = dict["taskIdentifier"] as! String;
-                let taskName = dict["taskName"] as! String;
-                let taskType = dict["taskType"] as! String;
-                let taskPriority = dict["taskPriority"] as! Int;
-                let taskStartedAt = dict["taskStartedAt"] as! NSDate;
-                let taskDueAt = dict["taskDueAt"] as! NSDate;
-                
-                let task = AlfrescoTask.init(taskIdentifier: taskIdentifier, taskName: taskName, taskType: taskType, taskPriority: taskPriority, taskStartedAtDate: taskStartedAt, taskDueAtDate: taskDueAt);
-                results.append(task);
-            }
-        }
-        
-        return results
     }
 }

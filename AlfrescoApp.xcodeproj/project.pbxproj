@@ -216,6 +216,7 @@
 		2B4005551C1EB78D00B57CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4005541C1EB78D00B57CF2 /* Assets.xcassets */; };
 		2B4005591C1EB78D00B57CF2 /* AppleWatchTest.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2B4005371C1EB78D00B57CF2 /* AppleWatchTest.app */; };
 		2B4005691C1EBB9400B57CF2 /* TaskDetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4005681C1EBB9400B57CF2 /* TaskDetailsInterfaceController.swift */; };
+		2B47A0321C24131E00271730 /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B47A0311C24131E00271730 /* CommunicationManager.swift */; };
 		2B55920B1B90AB1C00D85C7B /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5592091B90AB1C00D85C7B /* SearchResultsTableViewController.m */; };
 		2B55920C1B90AB1C00D85C7B /* SearchResultsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B55920A1B90AB1C00D85C7B /* SearchResultsTableViewController.xib */; };
 		2B7169F71B567CC1009A4487 /* large_folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B7169F51B567CC1009A4487 /* large_folder.png */; };
@@ -1165,6 +1166,7 @@
 		2B4005541C1EB78D00B57CF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B4005561C1EB78D00B57CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B4005681C1EBB9400B57CF2 /* TaskDetailsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailsInterfaceController.swift; sourceTree = "<group>"; };
+		2B47A0311C24131E00271730 /* CommunicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationManager.swift; sourceTree = "<group>"; };
 		2B5592081B90AB1C00D85C7B /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SearchResultsTableViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		2B5592091B90AB1C00D85C7B /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SearchResultsTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		2B55920A1B90AB1C00D85C7B /* SearchResultsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultsTableViewController.xib; sourceTree = "<group>"; };
@@ -2322,6 +2324,7 @@
 				2B4005481C1EB78D00B57CF2 /* Supporting Files */,
 				2B4005681C1EBB9400B57CF2 /* TaskDetailsInterfaceController.swift */,
 				2B98B8381C2010EA00361AE1 /* TaskTableRow.swift */,
+				2B47A0311C24131E00271730 /* CommunicationManager.swift */,
 			);
 			path = "AppleWatchTest Extension";
 			sourceTree = "<group>";
@@ -4841,6 +4844,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B47A0321C24131E00271730 /* CommunicationManager.swift in Sources */,
 				2B40054F1C1EB78D00B57CF2 /* NotificationController.swift in Sources */,
 				2B40054D1C1EB78D00B57CF2 /* ExtensionDelegate.swift in Sources */,
 				2B4005531C1EB78D00B57CF2 /* ComplicationController.swift in Sources */,

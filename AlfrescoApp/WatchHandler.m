@@ -139,4 +139,15 @@ static NSString * const kInitiatorWorkflowsPredicateFormat = @"initiatorUsername
     [self checkWatchState];
 }
 
+- (void)session:(WCSession *)session didReceiveMessage:(nonnull NSDictionary<NSString *,id> *)message replyHandler:(nonnull void (^)(NSDictionary<NSString *,id> * _Nonnull))replyHandler
+{
+    NSLog(@"message received %@", message);
+    replyHandler(@{@"reply": @"some reply"});
+}
+
+- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message
+{
+    NSLog(@"message received %@", message);
+}
+
 @end
