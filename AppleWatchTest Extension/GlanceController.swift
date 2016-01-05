@@ -10,12 +10,14 @@ import WatchKit
 import Foundation
 
 
-class GlanceController: WKInterfaceController {
+class GlanceController: WKInterfaceController, TaskListDisplayDelegate {
 
+    @IBOutlet var numberOfTasksLabel: WKInterfaceLabel!
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+        CommunicationManager.sharedInstance.taskListDelegate = self;
     }
 
     override func willActivate() {
@@ -26,6 +28,11 @@ class GlanceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    func loadTasks(tasks: [AlfrescoTask])
+    {
+        numberOfTasksLabel.setText(String(tasks.count));
     }
 
 }
