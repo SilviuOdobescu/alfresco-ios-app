@@ -232,6 +232,7 @@
 		2BB1BA121BDFDDB0005AEE12 /* NewAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1BA101BDFDDB0005AEE12 /* NewAccountViewController.m */; };
 		2BB1BA131BDFDDB0005AEE12 /* NewAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1BA111BDFDDB0005AEE12 /* NewAccountViewController.xib */; };
 		2BB2657D1B78938F00EE7EB0 /* AlfrescoURLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2657C1B78938F00EE7EB0 /* AlfrescoURLHandler.m */; };
+		2BB3C0611C3BBE8E0096309E /* ReviewPushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 2BB3C0601C3BBE8E0096309E /* ReviewPushNotificationPayload.apns */; };
 		2BC7CA801B219042009BB2A9 /* cell-button-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC7CA7E1B219042009BB2A9 /* cell-button-info.png */; };
 		2BC7CA811B219042009BB2A9 /* cell-button-info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC7CA7F1B219042009BB2A9 /* cell-button-info@2x.png */; };
 		2BC9AE6E1BDA7738003523C8 /* AccountInfoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9AE6C1BDA7738003523C8 /* AccountInfoDetailsViewController.m */; };
@@ -1189,6 +1190,7 @@
 		2BB1BA111BDFDDB0005AEE12 /* NewAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewAccountViewController.xib; path = "New Account/NewAccountViewController.xib"; sourceTree = "<group>"; };
 		2BB2657B1B78938F00EE7EB0 /* AlfrescoURLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlfrescoURLHandler.h; sourceTree = "<group>"; };
 		2BB2657C1B78938F00EE7EB0 /* AlfrescoURLHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlfrescoURLHandler.m; sourceTree = "<group>"; };
+		2BB3C0601C3BBE8E0096309E /* ReviewPushNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReviewPushNotificationPayload.apns; sourceTree = "<group>"; };
 		2BC7CA7E1B219042009BB2A9 /* cell-button-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell-button-info.png"; sourceTree = "<group>"; };
 		2BC7CA7F1B219042009BB2A9 /* cell-button-info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell-button-info@2x.png"; sourceTree = "<group>"; };
 		2BC7CA821B219C55009BB2A9 /* CollectionViewProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewProtocols.h; sourceTree = "<group>"; };
@@ -2333,6 +2335,7 @@
 			isa = PBXGroup;
 			children = (
 				2B4005491C1EB78D00B57CF2 /* PushNotificationPayload.apns */,
+				2BB3C0601C3BBE8E0096309E /* ReviewPushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -4338,6 +4341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B4005551C1EB78D00B57CF2 /* Assets.xcassets in Resources */,
+				2BB3C0611C3BBE8E0096309E /* ReviewPushNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
