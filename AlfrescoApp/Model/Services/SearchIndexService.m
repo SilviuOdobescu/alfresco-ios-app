@@ -126,7 +126,7 @@ static NSString * const kSearchIndexEntryPropertyFalse = @"false";
 {
     NSMutableDictionary *searchIndexEntryDict = [NSMutableDictionary dictionary];
     searchIndexEntryDict[kSearchIndexEntryPropertyName] = document.name;
-    searchIndexEntryDict[kSearchIndexEntryPropertyID] = [self normalizedNodeIdentifierForIdentifierString:document.identifier];
+    searchIndexEntryDict[kSearchIndexEntryPropertyID] = document.isDocument ? [self normalizedNodeIdentifierForIdentifierString:document.identifier] : document.identifier;
     searchIndexEntryDict[kSearchIndexEntryPropertyNodeType] = document.type;
     searchIndexEntryDict[kSearchIndexEntryPropertyIsFile] = document.isDocument ? kSearchIndexEntryPropertyTrue : kSearchIndexEntryPropertyFalse;
     
